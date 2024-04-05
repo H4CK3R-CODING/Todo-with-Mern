@@ -22,6 +22,7 @@ app.use("/api/msg", msgRouter);
 // })
 
 app.use(express.static(path.join(__dirname,"/frontend/dist")));
+// app.use("*",path.join(__dirname, "frontend", "dist", "index.html"));
 
 
 app.listen(port, async () => {
